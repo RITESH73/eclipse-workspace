@@ -1,0 +1,13 @@
+package com.one;
+
+public class dataDriven extends Two  {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//int printSubtract = subtract(60, 80)
+		
+		System.out.println(subtract(80, 100));
+	}
+
+}

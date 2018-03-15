@@ -1,0 +1,28 @@
+package com.collectonsdemo;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
+public class ArrayListClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Collection<String> value = new ArrayList<String>();
+		
+		value.add("ritesh");
+		value.add("Mehta");
+		value.add("Vicky");
+		
+		
+		
+		//Iterator i = value.iterator();
+		
+		for(Srting i : value) {
+		
+		System.out.println(i);
+		}
+
+	}
+}

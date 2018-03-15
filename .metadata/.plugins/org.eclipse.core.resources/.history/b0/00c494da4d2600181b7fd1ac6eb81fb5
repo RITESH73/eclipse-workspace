@@ -1,0 +1,18 @@
+package javaPracticeDemo;
+
+import java.io.File;
+
+public class checkTotalFilesInFolder {
+
+	public static void main(String[] args) {
+		int count = 0;
+		File f = new File("C:\\Users"); 
+		String[] s = f.list();
+		for(String s1 : s) {
+			count++;
+			System.out.println("List of file are : " + s);
+
+		}
+	}
+
+}

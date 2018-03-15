@@ -1,0 +1,35 @@
+package radioButtonDemo;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.server.handler.GetElementLocation;
+import org.testng.annotations.Test;
+
+public class SelectradioButton {
+
+		WebDriver driver;
+		@Test
+		public void openBrowswer() {
+		System.setProperty("webdriver.chrome.driver","C:/SeleniumDrivers/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("http://seleniumpractise.blogspot.com/2016/08/how-to-automate-radio-button-in.html");
+		driver.manage().window().maximize();
+		
+		/*int x = driver.findElement(By.id("male")).getLocation().getX();
+		int y = driver.findElement(By.id("male")).getLocation().getY();
+		System.out.println("value of x-coordinate is : " + x + " " + "value of y-coordinate is : " + y );*/
+		
+		List<WebElement> radioList = driver.findElements(By.id("male"));
+		int count =  radioList.size();
+		System.out.println("Total number of radio buttons are : " + count);
+		
+		 for(i=0 ; i<count; i++) {
+			
+		 }
+		}
+	
+}

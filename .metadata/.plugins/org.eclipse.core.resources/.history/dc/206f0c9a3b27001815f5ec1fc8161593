@@ -1,0 +1,17 @@
+package radioButtonDemo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class SelectradioButton {
+
+		WebDriver driver;
+		@Test
+		public void openBrowswer() {
+		System.setProperty("webdriver.chrome.driver","C:/SeleniumDrivers/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("http://seleniumpractise.blogspot.com/2016/08/how-to-automate-radio-button-in.html");
+		}
+	
+}

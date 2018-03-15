@@ -1,0 +1,24 @@
+package javaPracticeDemo;
+
+import java.io.File;
+
+public class CreateFileClass {
+
+	public static void main(String[] args) {
+		
+		File f = new File("Ritesh");
+		File f1 = new File("Ritesh","abc.txt");
+		System.out.println(f.exists());
+		
+		try {
+			f.mkdir();
+			f1.createNewFile();
+			System.out.println(f.exists());
+			}catch(Exception e) {
+			System.out.println("File doesn't exist : " + e);
+		}
+		
+
+	}
+
+}

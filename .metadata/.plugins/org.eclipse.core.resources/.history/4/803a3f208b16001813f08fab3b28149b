@@ -1,0 +1,20 @@
+package com.one;
+
+public class dataDriven extends Two  {
+	
+	public static String FirstName = "I love java";
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//int printSubtract = subtract(60, 80)
+		
+		System.out.println(subtract(0, 8));
+		
+		System.out.println(add(20, 30));
+		
+		
+		System.out.println(FirstName.length());
+	}
+
+}

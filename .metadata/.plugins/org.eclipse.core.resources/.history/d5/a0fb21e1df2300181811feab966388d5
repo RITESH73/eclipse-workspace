@@ -1,0 +1,18 @@
+package com.collectonsdemo;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class ArrayListClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Collection value = new ArrayList();
+		
+		value.add("ritesh");
+		value.add("Mehta");
+		value.add("Vicky");
+	}
+
+}

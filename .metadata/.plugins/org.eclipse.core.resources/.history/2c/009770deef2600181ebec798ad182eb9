@@ -1,0 +1,13 @@
+package com.readeconfigfilesdemo;
+
+import java.util.Properties;
+
+public class ConfigFileClass {
+
+	public static void main(String[] agrs) {
+		
+		Properties prop = new Properties();
+		
+		
+	}
+}

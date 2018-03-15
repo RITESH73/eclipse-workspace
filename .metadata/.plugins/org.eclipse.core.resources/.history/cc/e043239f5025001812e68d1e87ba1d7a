@@ -1,0 +1,20 @@
+package tests;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class NewTest {
+	
+	WebDriver driver;
+	
+	@Test
+	public void openMyLog() {
+		driver.get("http:www.facebook.com");
+	}
+	@BeforeClas
+	public void openBrowser() {
+		System.setProperty("webdriver.chrome.driver","C:/SeleniumDrivers/chromedriver.exe");
+		driver = new ChromeDriver();
+	}
+
+}

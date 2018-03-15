@@ -1,0 +1,38 @@
+package com.assertion;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class HardassertionDemo {
+
+	
+	@Test 
+	public void test1() {
+		Assert.assertEquals(12, 12);
+	}
+	@Test
+	public void test2() {
+		System.out.println("The second test case started");
+		Assert.assertEquals(12, 13, "The value didn't match. Please check this again");
+		System.out.println("The second test completed");
+	}
+	@Test
+	public void test3() {
+		System.out.println("The Thire test case started");
+		Assert.assertEquals("Ritesh", "Ritesh", "The name didn't match");
+		System.out.println("The third test completed");
+	}
+	
+	@Test
+	public void test4() {
+		System.out.println("********************************************************");
+		Assert.assertTrue(true);
+	}
+	@Test
+	public void test5() {
+		String name = "ritesh";
+		Assert.assertTrue(name.matches("ritesh"));
+	}
+	
+	
+}

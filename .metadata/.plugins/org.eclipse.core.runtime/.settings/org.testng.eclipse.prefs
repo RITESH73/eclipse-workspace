@@ -1,0 +1,3 @@
+SeleniumTesting.outdir=test-output
+SeleniumTestingxmlTemplateFile=${workspace_loc\:SeleniumTesting/testng.xml}
+eclipse.preferences.version=1
